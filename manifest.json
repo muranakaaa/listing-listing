@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "listing-listing",
+  "version": "1.0",
+  "description": "Google検索結果の広告URLを右側にシンプルに表示",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["content.js"]
+    }
+  ]
+}
